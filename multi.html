@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Column Layout with Image and Text</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="column">
+            <img src="images/24trending-shophotels1-articleLarge.jpg" alt="Image">
+        </div>
+        <div class="column">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante non felis luctus dapibus a sit amet dolor. Nulla ut arcu non nisl volutpat fringilla.</p>
+            <p>Phasellus tincidunt, odio eu sollicitudin ultricies, tortor lacus tempus augue, nec gravida lacus sapien non lacus. In rutrum accumsan libero, vel elementum odio malesuada eu.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante non felis luctus dapibus a sit amet dolor. Nulla ut arcu non nisl volutpat fringilla.</p>
+            <p>Phasellus tincidunt, odio eu sollicitudin ultricies, tortor lacus tempus augue, nec gravida lacus sapien non lacus. In rutrum accumsan libero, vel elementum odio malesuada eu.</p>
+        </div>
+        <div class="column">
+            <img src="images/24trending-shophotels1-articleLarge.jpg" alt="Image">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <img src="images/24trending-shophotels1-articleLarge.jpg" alt="Image">
+        </div>
+        <div class="column">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante non felis luctus dapibus a sit amet dolor. Nulla ut arcu non nisl volutpat fringilla.</p>
+            <p>Phasellus tincidunt, odio eu sollicitudin ultricies, tortor lacus tempus augue, nec gravida lacus sapien non lacus. In rutrum accumsan libero, vel elementum odio malesuada eu.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis ante non felis luctus dapibus a sit amet dolor. Nulla ut arcu non nisl volutpat fringilla.</p>
+            <p>Phasellus tincidunt, odio eu sollicitudin ultricies, tortor lacus tempus augue, nec gravida lacus sapien non lacus. In rutrum accumsan libero, vel elementum odio malesuada eu.</p>
+        </div>
+        <div class="column">
+            <img src="images/24trending-shophotels1-articleLarge.jpg" alt="Image">
+        </div>
+    </div>
+</body>
+</html>

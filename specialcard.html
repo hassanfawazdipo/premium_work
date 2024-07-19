@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Small Cards</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-right: 10px; /* Gap between cards */
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove right margin for the last card */
+}
+
+.word {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .word {
+    transform: translateX(50%);
+}
+
+@media (max-width: 768px) {
+    .card:hover .word {
+        transform: scale(1.1);
+    }
+
+    .card {
+        flex-basis: calc(33.33% - 10px); /* Adjust for gap */
+        margin-right: 0;
+        margin-bottom: 10px; /* Gap between rows */
+    }
+
+    .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+</style>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <span class="word">Word 1</span>
+        </div>
+        <div class="card">
+            <span class="word">Word 2</span>
+        </div>
+        <div class="card">
+            <span class="word">Word 3</span>
+        </div>
+    </div>
+</body>
+</html>

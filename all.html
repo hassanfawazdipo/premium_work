@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo">LOGO-IMAGE</div>
+            <div class="icon" onclick="icon()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="login.php">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-vecislavas-popa-1743231.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-pixabay-261041.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-pixabay-210265.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-pixabay-265947.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-pixabay-271639.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <br>
+
+
+        </div>
+        <header>
+            <h1>Globe Roma</h1>
+        </header>
+        <div class="grid-container">
+            <article>
+                <img src="images/24trending-shophotels1-articleLarge.jpg" alt="featured image">
+                <div>
+                    <div class="card-content">
+                        <h2>Title 2</h2>
+                        <p>Description 2</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <button>Button 2</button>
+                    </div>
+                </div>
+            </article>
+            <article class="">
+                <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+                <div>
+                    <div class="card-content">
+                        <h2>Title 2</h2>
+                        <p>Description 2</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <button>Button 2</button>
+                    </div>
+    
+                </div>
+            </article>
+            <article class="">
+                <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+                <div>
+                    <div class="card-content">
+                        <h2>Title 2</h2>
+                        <p>Description 2</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <p>Description 1</p>
+                        <button>Button 2</button>
+                    </div>
+    
+                </div>
+            </article>
+           
+        </div>
+        <header>
+            <h1>Globe Roma</h1>
+        </header>
+        <div class="grid-container">
+            <article class="featured">
+                <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+                <div>
+                    <h2>ballon magic</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                        animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                    </p>
+    
+                </div>
+            </article>
+    
+            <article class="featured">
+                <div>
+                    <h2>ballon magic</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                        animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                    </p>
+    
+                </div>
+                <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+                
+            </article>
+        </div>
+
+        <div class="contain">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function icon() {
+            var icon = document.getElementById("nav");
+            icon.classList.toggle("active");
+        }
+
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < slides.length; i++) {
+    slides[i].className = slides[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+    </script>
+</body>
+
+</html>

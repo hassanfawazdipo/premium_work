@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holy_grail_layout</title>
+</head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr ;
+        column-gap: 30px;
+    }
+
+    header{
+        grid-column: span 3;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+    }
+
+    nav{
+        padding: 30px;
+        border-right: 1px solid #ddd;
+    }
+
+    nav li {
+        text-decoration: underline;
+    }
+
+    article{
+        padding: 30px;
+
+    }
+
+    article h2{
+      font-size: 40px;
+      max-width: 800px;
+        
+    }
+
+    article img{
+        width: 100%;
+    }
+
+    article p{
+        margin-top: 30px;
+        line-height: 2em;
+        color: #777;
+    }
+
+    aside{
+        padding: 30px;
+        border-left: 1px solid #ddd;
+    }
+
+    footer{
+        grid-column: span 3;
+        text-align: center;
+        border-top: 2px solid #ddd;
+        padding: 30px;
+    }
+
+    /* responsive */
+
+    @media screen and (max-width:1200px) {
+        nav{
+            grid-column: span 3;
+            border-right: 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        article{
+            grid-column: span 2;
+        }
+
+        aside{
+            padding: 13px;
+        }
+    }
+
+    @media screen and (max-width:980px) {
+        nav,article,aside {
+            grid-column: span 3;
+        }
+
+        aside{
+            border-left: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        article h2 {
+            font-size: 2.5em;
+        }
+    }
+</style>
+<body>
+    <header>
+        <div class="grid-container">
+            <header>
+                <h1>the for wall</h1>
+            </header>
+            <nav>
+                <p>categories</p>
+                <li>home</li>
+                <li>about</li>
+                <li>contact us </li>
+                <li>team </li>
+                <li>log out </li>
+            </nav>
+            <article>
+                <h2>the best 5 open world game</h2>
+                <img src="images/24trending-shophotels1-articleLarge.jpg" alt="banner">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque suscipit magnam ipsa numquam, asperiores inventore sint beatae illum nostrum blanditiis recusandae eum enim aspernatur minus quidem accusantium quos similique? Odit nisi atque cum sequi, incidunt perspiciatis quod nesciunt, assumenda suscipit, autem doloribus aliquam consequuntur enim nulla saepe adipisci ipsum unde.</p>
+            </article>
+
+            <aside>
+                <ul>
+                    <li>
+                        <p><strong>published on :</strong></p>
+                        <p>may 6th 2023</p>
+                    </li>
+                    <li>
+                        <p><strong>in the category :</strong></p>
+                        <p>games and console</p>
+                    </li>
+                    <li>
+                        <p><strong>written by :</strong></p>
+                        <p>hassan fawaz</p>
+                    </li>
+                </ul>
+            </aside>
+            <footer>
+                <p>cpoyright @ 2023</p>
+            </footer>
+        </div>
+    </header>
+</body>
+</html>

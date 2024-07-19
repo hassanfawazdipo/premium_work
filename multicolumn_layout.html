@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multicolumn_layout</title>
+</head>
+<style>
+    header {
+        max-width: 1200px;
+        margin: 40px auto;
+        border-bottom: 5px solid black;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    article img,
+    article.featured img {
+        width: 100%;
+        border: 4px solid black;
+        border-radius: 10px;
+    }
+
+    article.featured {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 40px;
+    }
+
+    article p,
+    article h3 {
+        margin: 20px 10px;
+    }
+
+    /* responsive */
+
+    @media screen and (max-width:980px) {
+        article {
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width:760px) {
+        article, article.featured {
+            display: block;
+            margin: 0 20px;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Globe Roma</h1>
+    </header>
+    <div class="grid-container">
+        
+
+        <article>
+            <img src="images/24trending-shophotels1-articleLarge.jpg" alt="featured image">
+            <div>
+                <h3>ballon magic</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque eligendi quod nesciunt
+                    consequatur reiciendis culpa deserunt, excepturi deleniti omnis.</p>
+            </div>
+        </article>
+        <article class="">
+            <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+            <div>
+                <h2>ballon magic</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                    animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                </p>
+
+            </div>
+        </article>
+        <article class="">
+            <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+            <div>
+                <h2>ballon magic</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                    animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                </p>
+
+            </div>
+        </article>
+       
+        <article class="featured">
+            <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+            <div>
+                <h2>ballon magic</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                    animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                </p>
+
+            </div>
+        </article>
+
+        <article class="featured">
+            <div>
+                <h2>ballon magic</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nam labore rem recusandae neque, ea
+                    animi! Dolorem eum atque mollitia, nulla autem, alias distinctio explicabo ex at nostrum aut dolor?
+                </p>
+
+            </div>
+            <img src="images//24trending-shophotels1-articleLarge.jpg" alt="featured image">
+            
+        </article>
+    </div>
+
+</body>
+
+</html>
